@@ -44,6 +44,17 @@
                         </select>
                     </div>
                     <div class="form-group">
+                        <label>Kategori</label>
+                        <select name="kategori" class="form-control" id="kategori">
+                            <option disabled selected value="">-- Select Kategori --</option>
+                            @foreach ($kategoris as $kategori)
+                            <option value="{{ $kategori->id }}">
+                                {{ ucfirst($kategori->nama) }}
+                            </option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div class="form-group">
                         <label>Deskripsi</label>
                         <textarea name="deskripsi" class="ckeditor form-control"></textarea>
                     </div>

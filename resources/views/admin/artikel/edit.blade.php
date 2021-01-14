@@ -15,9 +15,10 @@
 
         <div class="col-xl-8 col-lg-7">
             <div class="card shadow mb-4">
-                <form action="/dashboard/artikel/store" method="post" class="m-3" enctype="multipart/form-data"
-                    class="m-3">
+                <form action="/dashboard/artikel/{{$artikel->id}}/edit" method="post" class="m-3"
+                    enctype="multipart/form-data" class="m-3">
                     @csrf
+                    @method('patch')
                     <div class="form-group">
                         <label>Judul</label>
                         <input name="judul" value="{{ $artikel->judul }}" class="form-control" type="text"
@@ -45,6 +46,18 @@
                             @foreach ($kotas as $kota)
                             <option value="{{ $kota->id }}" {{$kota->id == $artikel->kota_id ? 'selected':''}}>
                                 {{ ucfirst($kota->nama) }}
+                            </option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Kategori</label>
+                        <select name="kategori" class="form-control" id="kategori">
+                            <option disabled selected value="">-- Select Kategori --</option>
+                            @foreach ($kategoris as $kategori)
+                            <option value="{{ $kategori->id }}"
+                                {{$kategori->id == $artikel->kategori_id ? 'selected':''}}>
+                                {{ ucfirst($kategori->nama) }}
                             </option>
                             @endforeach
                         </select>

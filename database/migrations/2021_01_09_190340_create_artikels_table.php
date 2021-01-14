@@ -15,7 +15,7 @@ class CreateArtikelsTable extends Migration
     {
         Schema::create('artikels', function (Blueprint $table) {
             $table->id();
-            $table->string('judul', 100);
+            $table->string('judul', 190);
             $table->foreignId('karesidenan_id')->nullable();
             $table->foreignId('kota_id')->nullable();
             $table->string('foto_judul')->nullable();

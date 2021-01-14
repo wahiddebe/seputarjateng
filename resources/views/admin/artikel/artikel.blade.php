@@ -23,6 +23,7 @@
                             <th>Judul Artikel</th>
                             <th>Karesidenan</th>
                             <th>Kabupaten / Kota</th>
+                            <th>Kategori</th>
                             <th>Isi Artikel</th>
                             <th>Aksi</th>
                         </tr>
@@ -37,6 +38,7 @@
                             <td>{{ $item->judul }}</td>
                             <td>{{ $item->karesidenan->nama }}</td>
                             <td>{{ $item->kota->nama }}</td>
+                            <td>{{ $item->kategori->nama }}</td>
                             <td><button class="btn-warning btn btn-sm" data-toggle="modal"
                                     data-target="#show-item-{{ $item->id }}">Show</button>
                                 <div class="modal fade" id="show-item-{{ $item->id }}" tabindex="-1"

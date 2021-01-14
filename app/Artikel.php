@@ -14,4 +14,8 @@ class Artikel extends Model
     {
         return $this->belongsTo(Kota::class);
     }
+    public function kategori()
+    {
+        return $this->belongsTo(Kategori::class);
+    }
 }
