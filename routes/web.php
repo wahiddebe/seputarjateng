@@ -21,7 +21,7 @@ Route::get('/artikel/karesidenan/{karesidenan:nama}', 'ArtikelController@show_ka
 Route::get('/artikel/kota/{kota:nama}', 'ArtikelController@show_kota');
 Route::get('/artikel/kategori/{kategori:nama}', 'ArtikelController@show_kategori');
 
-
+Route::get('artikels-lists', 'ArtikelSearchController@index')->name('artikels-lists');
 Route::get('/karesidenan', 'ArtikelController@karesidenan')->name('karesidenan');
 
 Route::get('/contact', 'ContactController@index')->name('contact');

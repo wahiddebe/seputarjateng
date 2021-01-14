@@ -44,8 +44,8 @@
                             </ul>
                         </div>
                         <div class="header_top_right">
-                            <form action="#" class="search_form">
-                                <input type="text" placeholder="Text to Search">
+                            <form action="{{ route('artikels-lists') }}" method="GET" class="search_form">
+                                <input type="text" name="titlesearch" placeholder="Text to Search">
                                 <input type="submit" value="">
                             </form>
                         </div>
