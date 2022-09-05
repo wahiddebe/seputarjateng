@@ -37,11 +37,11 @@
             <span>Pesan</span></a>
     </li>
     <!-- Nav Item - Pengguna -->
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a class="nav-link" href="">
             <i class="fas fa-fw fa-users"></i>
             <span>Pengguna</span></a>
-    </li>
+    </li> --}}
     <!-- Nav Item - Sosial Media -->
     <li class="nav-item">
         <a class="nav-link" href="/medsos">

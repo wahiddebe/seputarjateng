@@ -17,7 +17,7 @@
                                 $twitter = $item->twitter;
                                 @endphp
                                 @endforeach
-                                <li><a href="{{ 'https://www.facebook.com/'.$facebook }}" target=" _blank"
+                                <li><a href="{{ 'https://www.facebook.com/'.$facebook ?? '' }}" target=" _blank"
                                         class="social-icon"> <i class="fa fa-facebook"></i></a>
                                 </li>
                                 <li><a href="{{ 'https://twitter.com/'.$twitter }}" target=" _blank"
@@ -33,7 +33,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="single_footer_top wow fadeInRight">
                         <h2>About Us</h2>
-                        <p>Seputar Jateng merupakan portal berita online yang menghadirkan berita-berita terbaru,
+                        <p>Kaffah News merupakan portal berita online yang menghadirkan berita-berita terbaru,
                             Faktual , mencerahkan dan
                             mencerdaskan ummat</p>
                     </div>
@@ -46,12 +46,12 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div class="footer_bottom_left">
-                        <p>Copyright &copy; 2021 <a class="a-footer" href="/">SeputarJateng</a></p>
+                        <p>Copyright &copy; 2021 <a class="a-footer" href="/">Kaffah News</a></p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div class="footer_bottom_right">
-                        <p>Developed by <a class="a-footer" href="http://aksantaradigital.com/">Aksantara Digital</a>
+                        <p>Developed by <a class="a-footer" href="http://aksantara.com/">Aksantara Digital</a>
                         </p>
                     </div>
                 </div>
